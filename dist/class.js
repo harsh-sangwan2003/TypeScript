@@ -4,6 +4,7 @@ class Player {
         this.height = height;
         this.weight = weight;
         this.age = age;
+        this.id = String(Math.random() * 10);
     }
     get getHeight() {
         return this.height;
@@ -24,3 +25,4 @@ let p2 = new Player2(90, 80, 12, true);
 console.log(p2.getHeight);
 p2.setHeight = 12;
 console.log(p2.getHeight);
+console.log(p2.id);
