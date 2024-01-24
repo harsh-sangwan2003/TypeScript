@@ -4,9 +4,23 @@ class Player {
         this.height = height;
         this.weight = weight;
         this.age = age;
-        this.getHeight = () => this.height;
+    }
+    get getHeight() {
+        return this.height;
+    }
+    ;
+    set setHeight(val) {
+        this.height = val;
+    }
+}
+class Player2 extends Player {
+    constructor(height, weight, age, special) {
+        super(height, weight, age);
+        this.special = special;
     }
 }
 let p1 = new Player(90, 80, 19);
-console.log(p1.getHeight());
-console.log(p1.age);
+let p2 = new Player2(90, 80, 12, true);
+console.log(p2.getHeight);
+p2.setHeight = 12;
+console.log(p2.getHeight);
