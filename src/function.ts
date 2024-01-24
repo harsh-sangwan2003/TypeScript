@@ -4,3 +4,44 @@ const fn: UserName = (n, m) => {
 
     return n + m;
 }
+
+// Function with rest params
+function func(...n: number[]): number[] {
+
+    return n;
+}
+
+// Function with object
+interface Product {
+
+    name: string,
+    stock: number,
+    price: number,
+    photo: string
+}
+type GetDataType = (product: Product) => void;
+
+const getDataType: GetDataType = (product) => {
+
+    console.log(product);
+}
+
+const productOne: Product = {
+
+    name: "Macbook",
+    stock: 46,
+    price: 99999,
+    photo: "samplephoto"
+}
+
+getDataType(productOne);
+
+// never type
+const errorHandler = (): never => {
+
+    throw new Error();
+}
+
+type ThemeMode = "light" | "dark";
+
+const mode: ThemeMode = "dark";
