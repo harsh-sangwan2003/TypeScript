@@ -26,3 +26,12 @@ console.log(p2.getHeight);
 p2.setHeight = 12;
 console.log(p2.getHeight);
 console.log(p2.id);
+class Product {
+    constructor(name, price, stock) {
+        this.name = name;
+        this.price = price;
+        this.stock = stock;
+        this.id = String(Math.random() * 10);
+        this.getId = () => this.id;
+    }
+}

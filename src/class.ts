@@ -1,10 +1,10 @@
 class Player {
 
-    readonly id : string;
+    readonly id: string;
 
     constructor(private height: number, protected weight: number, public age: number) {
 
-        this.id = String(Math.random()*10);
+        this.id = String(Math.random() * 10);
     }
 
     get getHeight() {
@@ -35,3 +35,26 @@ console.log(p2.getHeight);
 p2.setHeight = 12;
 console.log(p2.getHeight);
 console.log(p2.id);
+
+interface ProductType {
+
+    name: string,
+    price: number,
+    stock: number,
+    offer?: boolean,
+}
+
+interface GiveId {
+
+    getId: () => string
+}
+
+class Product implements ProductType, GiveId {
+
+    private id: string = String(Math.random() * 10);
+
+    constructor(public name: string, public price: number, public stock: number) { }
+
+    getId = () => this.id;
+
+}
