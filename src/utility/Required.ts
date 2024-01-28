@@ -1,13 +1,7 @@
-type User3 = {
-
-    name: string,
-    email: string
-}
-
 // Opposite of Partial
-type User4 = Required<User3>
+type User3 = Required<User>
 
-const obj: Required<User3> = {
+const obj: Required<User> = {
 
     name: "Harsh",
     email: "abc@gmail.com"
