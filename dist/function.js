@@ -9,13 +9,6 @@ function func(...n) {
 const getDataType = (product) => {
     console.log(product);
 };
-const productOne = {
-    name: "Macbook",
-    stock: 46,
-    price: 99999,
-    photo: "samplephoto"
-};
-getDataType(productOne);
 // never type
 const errorHandler = () => {
     throw new Error();
