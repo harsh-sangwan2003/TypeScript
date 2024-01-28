@@ -14,5 +14,11 @@ const input = document.querySelector('input') as HTMLInputElement;
 form.onsubmit = (e) => {
 
     e.preventDefault();
-    console.log(input.value);
+    const h2 = document.createElement('h2');
+    const body = document.querySelector('body')!;
+    const value = Number(input.value);
+
+    h2.textContent = String(value + 20);
+    body.append(h2);
+
 }
