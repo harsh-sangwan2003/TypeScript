@@ -1,0 +1,1 @@
+type Info = Omit<OrderInfo,"state"|"city">
