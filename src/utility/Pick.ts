@@ -8,4 +8,5 @@ interface OrderInfo{
     status:boolean
 }
 
+// Pick<Type, Keys>
 type ShippingInfo = Pick<OrderInfo,"user"|"city"|"state">
