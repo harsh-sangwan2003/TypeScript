@@ -3,7 +3,7 @@ const fn = (n, m) => {
     return n + m;
 };
 // Function with rest params
-function func(...n) {
+function func2(...n) {
     return n;
 }
 const getDataType = (product) => {

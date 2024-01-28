@@ -6,7 +6,7 @@ const fn: UserName = (n, m) => {
 }
 
 // Function with rest params
-function func(...n: number[]): number[] {
+function func2(...n: number[]): number[] {
 
     return n;
 }
